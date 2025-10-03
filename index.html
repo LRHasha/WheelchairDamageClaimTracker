@@ -122,6 +122,43 @@
             </div>
         </div>
 
+        <!-- Claimant Information -->
+        <section class="section-card rounded-xl shadow-lg p-5 mb-5">
+            <div class="mb-4">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Claimant Information</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div class="md:col-span-2">
+                    <label class="block text-xs font-semibold text-gray-700 mb-1.5 uppercase tracking-wide">Full Name</label>
+                    <input type="text" id="claimantName" class="input-field w-full p-2.5 text-sm border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="First and Last Name">
+                </div>
+                <div class="md:col-span-2">
+                    <label class="block text-xs font-semibold text-gray-700 mb-1.5 uppercase tracking-wide">Street Address</label>
+                    <input type="text" id="claimantAddress" class="input-field w-full p-2.5 text-sm border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Street address">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 mb-1.5 uppercase tracking-wide">City</label>
+                    <input type="text" id="claimantCity" class="input-field w-full p-2.5 text-sm border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="City">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 mb-1.5 uppercase tracking-wide">State</label>
+                    <input type="text" id="claimantState" class="input-field w-full p-2.5 text-sm border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="State">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 mb-1.5 uppercase tracking-wide">ZIP Code</label>
+                    <input type="text" id="claimantZip" class="input-field w-full p-2.5 text-sm border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="ZIP Code">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 mb-1.5 uppercase tracking-wide">Telephone Number</label>
+                    <input type="tel" id="claimantPhone" class="input-field w-full p-2.5 text-sm border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="(555) 123-4567">
+                </div>
+                <div class="md:col-span-2">
+                    <label class="block text-xs font-semibold text-gray-700 mb-1.5 uppercase tracking-wide">Email Address</label>
+                    <input type="email" id="claimantEmail" class="input-field w-full p-2.5 text-sm border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="email@example.com">
+                </div>
+            </div>
+        </section>
+
         <!-- Device Information -->
         <section class="section-card rounded-xl shadow-lg p-5 mb-5">
             <div class="mb-4">
@@ -162,10 +199,10 @@
                     <label class="block text-xs font-semibold text-gray-700 mb-1.5 uppercase tracking-wide">Vendor/Supplier</label>
                     <input type="text" id="vendor" class="input-field w-full p-2.5 text-sm border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Where purchased">
                 </div>
-                <div class="md:col-span-3">
-                    <label class="block text-xs font-semibold text-gray-700 mb-1.5 uppercase tracking-wide">Configuration Type</label>
-                    <textarea id="configuration" class="input-field w-full p-2.5 text-sm border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" rows="6" placeholder="e.g., Folding ultralight, Rigid frame, Power assist, Manual with custom wheels, etc."></textarea>
-                </div>
+            </div>
+            <div class="mb-4">
+                <h2 class="text-xl font-bold text-gray-800 mb-2">Configuration Type</h2>
+                <textarea id="configuration" class="input-field w-full p-2.5 text-sm border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" rows="6" placeholder="e.g., Folding ultralight, Rigid frame, Power assist, Manual with custom wheels, etc."></textarea>
             </div>
             <div>
                 <h2 class="text-xl font-bold text-gray-800 mb-2">
@@ -366,6 +403,131 @@
             </ul>
         </section>
 
+        <!-- Your Rights and Resources -->
+        <section class="section-card rounded-xl shadow-lg p-5 mb-5">
+            <div class="mb-4">
+                <h2 class="text-2xl font-bold text-gray-800 mb-2">Your Rights & Available Resources</h2>
+                <p class="text-sm text-gray-600">Federal law provides extensive protections for passengers with disabilities. Know your rights.</p>
+            </div>
+
+            <!-- Legal Rights -->
+            <div class="mb-6">
+                <h3 class="text-lg font-bold text-blue-700 mb-3">Your Legal Rights</h3>
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+                    <h4 class="font-semibold text-gray-800 mb-2">Air Carrier Access Act (ACAA) - 14 CFR Part 382</h4>
+                    <ul class="text-sm text-gray-700 space-y-2 ml-4">
+                        <li><strong>Absolute Liability:</strong> Airlines are 100% liable for any damage to wheelchairs and assistive devices - no liability caps apply (14 CFR § 382.43)</li>
+                        <li><strong>Full Replacement Value:</strong> Airlines must repair or replace at full current market value, not depreciated value</li>
+                        <li><strong>Immediate Accommodation:</strong> Airlines must provide a suitable loaner wheelchair immediately if yours is damaged</li>
+                        <li><strong>Consequential Damages:</strong> You can claim for missed appointments, lost income, additional expenses, and emotional distress</li>
+                        <li><strong>No Waivers:</strong> Airlines cannot make you sign liability waivers for wheelchairs (14 CFR § 382.41)</li>
+                    </ul>
+                    <p class="text-xs text-gray-600 mt-3">
+                        <strong>Full regulation:</strong> <a href="https://www.ecfr.gov/current/title-14/chapter-II/subchapter-D/part-382" target="_blank" class="text-blue-600 hover:underline">14 CFR Part 382 - Air Carrier Access Act</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- DOT Regulations -->
+            <div class="mb-6">
+                <h3 class="text-lg font-bold text-purple-700 mb-3">Department of Transportation (DOT) Regulations</h3>
+                <div class="bg-purple-50 border-l-4 border-purple-500 p-4 rounded">
+                    <ul class="text-sm text-gray-700 space-y-2 ml-4">
+                        <li><strong>Priority Handling:</strong> Wheelchairs must be the first items loaded and last items unloaded (14 CFR § 382.125)</li>
+                        <li><strong>Prompt Return:</strong> Airlines must return wheelchairs at the aircraft door or gate for gate-checked devices</li>
+                        <li><strong>Documentation Required:</strong> Airlines must provide written damage reports (PIR) immediately</li>
+                        <li><strong>No Time Limits:</strong> Unlike regular baggage (which has 24-hour limits), wheelchair damage claims have no federal time limit</li>
+                    </ul>
+                    <p class="text-xs text-gray-600 mt-3">
+                        <strong>Reference:</strong> <a href="https://www.transportation.gov/individuals/aviation-consumer-protection/wheelchairs" target="_blank" class="text-purple-600 hover:underline">DOT - Traveling with Wheelchairs</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Filing Complaints -->
+            <div class="mb-6">
+                <h3 class="text-lg font-bold text-green-700 mb-3">Where to File Complaints</h3>
+                <div class="space-y-3">
+                    <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+                        <h4 class="font-semibold text-gray-800 mb-2">1. DOT Aviation Consumer Protection Division</h4>
+                        <p class="text-sm text-gray-700 mb-2"><strong>This is your most powerful tool.</strong> DOT tracks complaints and can pressure airlines to resolve claims.</p>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            <li>• <strong>Email:</strong> <a href="mailto:aviation.consumerprotection@dot.gov" class="text-green-600 hover:underline">aviation.consumerprotection@dot.gov</a></li>
+                            <li>• <strong>Online Form:</strong> <a href="https://secure.dot.gov/air-travel-complaint" target="_blank" class="text-green-600 hover:underline">https://secure.dot.gov/air-travel-complaint</a></li>
+                            <li>• <strong>Phone:</strong> 202-366-2220</li>
+                            <li>• <strong>Mail:</strong> Aviation Consumer Protection Division, U.S. Department of Transportation, 1200 New Jersey Avenue SE, Washington, DC 20590</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+                        <h4 class="font-semibold text-gray-800 mb-2">2. Airline's Complaints Resolution Official (CRO)</h4>
+                        <p class="text-sm text-gray-700 mb-2">Every airline must have a CRO available 24/7 to handle disability-related complaints (14 CFR § 382.151)</p>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            <li>• Ask airport staff to contact the CRO immediately</li>
+                            <li>• CRO must be available at all times the airline operates</li>
+                            <li>• Get the CRO's name and direct contact information</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+                        <h4 class="font-semibold text-gray-800 mb-2">3. Disability Rights Organizations</h4>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            <li>• <strong>Paralyzed Veterans of America (PVA):</strong> <a href="https://pva.org" target="_blank" class="text-green-600 hover:underline">pva.org</a> - Free legal assistance for veterans</li>
+                            <li>• <strong>Disability Rights Education & Defense Fund:</strong> <a href="https://dredf.org" target="_blank" class="text-green-600 hover:underline">dredf.org</a> - (510) 644-2555</li>
+                            <li>• <strong>National Disability Rights Network:</strong> <a href="https://ndrn.org" target="_blank" class="text-green-600 hover:underline">ndrn.org</a> - (202) 408-9514</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Legal Assistance -->
+            <div class="mb-6">
+                <h3 class="text-lg font-bold text-red-700 mb-3">Legal Assistance & Representation</h3>
+                <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded">
+                    <p class="text-sm text-gray-700 mb-3">If the airline refuses to provide fair compensation, consider consulting an attorney. Many work on contingency (no fee unless you win).</p>
+                    <ul class="text-sm text-gray-700 space-y-2 ml-4">
+                        <li><strong>When to get an attorney:</strong>
+                            <ul class="ml-4 mt-1">
+                                <li>- Airline denies liability or offers inadequate compensation</li>
+                                <li>- Significant consequential damages (lost income, health impacts)</li>
+                                <li>- High-value custom wheelchair (over $10,000)</li>
+                                <li>- Airline is delaying resolution beyond 30 days</li>
+                            </ul>
+                        </li>
+                        <li><strong>Find attorneys:</strong> Search for "aviation attorney" or "disability rights attorney" in your state, or contact your state bar association</li>
+                        <li><strong>Americans with Disabilities Act (ADA) claims:</strong> You may also have claims under the ADA (42 U.S.C. § 12101 et seq.) in addition to ACAA claims</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Additional Resources -->
+            <div class="mb-6">
+                <h3 class="text-lg font-bold text-indigo-700 mb-3">Additional Resources & Information</h3>
+                <div class="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded">
+                    <ul class="text-sm text-gray-700 space-y-2">
+                        <li>• <strong>DOT Passengers with Disabilities Guide:</strong> <a href="https://www.transportation.gov/airconsumer/passengers-disabilities" target="_blank" class="text-indigo-600 hover:underline">transportation.gov/airconsumer/passengers-disabilities</a></li>
+                        <li>• <strong>Airline On-Time Performance & Complaints Data:</strong> <a href="https://www.transportation.gov/airconsumer/air-travel-consumer-reports" target="_blank" class="text-indigo-600 hover:underline">transportation.gov/airconsumer/air-travel-consumer-reports</a></li>
+                        <li>• <strong>TSA Disability Notification Card:</strong> <a href="https://www.tsa.gov/travel/passenger-support" target="_blank" class="text-indigo-600 hover:underline">tsa.gov/travel/passenger-support</a></li>
+                        <li>• <strong>Airline Accessibility Information:</strong> Each airline's website must have an accessibility section with their policies</li>
+                        <li>• <strong>File FAA Safety Complaints:</strong> If airline handling created safety risks: <a href="https://hotline.faa.gov" target="_blank" class="text-indigo-600 hover:underline">hotline.faa.gov</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Know Your Numbers -->
+            <div class="bg-gradient-to-r from-gray-800 to-gray-900 text-white p-5 rounded-xl">
+                <h3 class="text-lg font-bold mb-3">Important: Know These Facts</h3>
+                <ul class="text-sm space-y-2">
+                    <li>✓ Airlines damaged or lost approximately <strong>11,000+ wheelchairs in 2023</strong> (DOT Air Travel Consumer Report)</li>
+                    <li>✓ Under ACAA, there is <strong>NO LIABILITY CAP</strong> for assistive devices - airlines pay full value</li>
+                    <li>✓ You can claim <strong>consequential damages</strong> - not just the wheelchair cost</li>
+                    <li>✓ Airlines <strong>cannot require you to sign liability waivers</strong> for wheelchairs</li>
+                    <li>✓ Filing a DOT complaint creates an <strong>official government record</strong> and often results in faster resolution</li>
+                    <li>✓ The airline must provide <strong>prompt temporary replacement</strong> at their expense</li>
+                </ul>
+            </div>
+        </section>
+
         <div class="text-center text-sm text-gray-500 pb-4 no-print">
             <p class="font-medium">Last updated: <span id="lastUpdated" class="text-blue-600"></span></p>
         </div>
@@ -473,6 +635,15 @@
 
         function getAllFormData() {
             return {
+                claimantInfo: {
+                    name: document.getElementById('claimantName').value,
+                    address: document.getElementById('claimantAddress').value,
+                    city: document.getElementById('claimantCity').value,
+                    state: document.getElementById('claimantState').value,
+                    zip: document.getElementById('claimantZip').value,
+                    phone: document.getElementById('claimantPhone').value,
+                    email: document.getElementById('claimantEmail').value
+                },
                 deviceInfo: {
                     manufacturer: document.getElementById('manufacturer').value,
                     model: document.getElementById('model').value,
@@ -511,6 +682,15 @@
         }
 
         function setAllFormData(data) {
+            if (data.claimantInfo) {
+                document.getElementById('claimantName').value = data.claimantInfo.name || '';
+                document.getElementById('claimantAddress').value = data.claimantInfo.address || '';
+                document.getElementById('claimantCity').value = data.claimantInfo.city || '';
+                document.getElementById('claimantState').value = data.claimantInfo.state || '';
+                document.getElementById('claimantZip').value = data.claimantInfo.zip || '';
+                document.getElementById('claimantPhone').value = data.claimantInfo.phone || '';
+                document.getElementById('claimantEmail').value = data.claimantInfo.email || '';
+            }
             if (data.deviceInfo) {
                 document.getElementById('manufacturer').value = data.deviceInfo.manufacturer || '';
                 document.getElementById('model').value = data.deviceInfo.model || '';
